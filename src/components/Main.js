@@ -6,11 +6,11 @@ import segundaImagem from '../Imagens/Somos.png';
 import PacotesContainer from './PacotesContainer'; // Verifique se o caminho está correto
 
 const MainContainer = styled.main`
-  background-color: #2c2c2c;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0rem 0;
+  padding: -1rem;
   margin-top: 1rem;
   width: 100%; /* Define a largura como 100% */
   flex: 1;

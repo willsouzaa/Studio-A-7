@@ -6,6 +6,7 @@ import Slide2 from '../Imagens/Slide2.png';
 import Slide3 from '../Imagens/Slide3.png';
 
 const SmallSlideshowContainer = styled.div`
+  background-color: #2c2c2c;
   min-width: 100%;
   max-height: 50%; /* Altura do slideshow pequeno */
   overflow: hidden;

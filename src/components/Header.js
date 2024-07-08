@@ -5,10 +5,11 @@ import logo from '../Imagens/Logo.png';
 const HeaderContainer = styled.header`
   background-color: #000;
   color: white;
-  padding: 1rem;
+  padding: 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
 `;
 
 const Logo = styled.img`
@@ -19,7 +20,8 @@ const Logo = styled.img`
 const NavContainer = styled.nav`
   display: flex;
   justify-content: center;
-  width: 40%; /* Garante que o contêiner de navegação ocupe toda a largura disponível */
+  width: 100%; /* Garante que o contêiner de navegação ocupe toda a largura disponível */
+  height: 100%;
 `;
 
 const Nav = styled.div`
