@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import logo from '../Imagens/Logo.png';
 
@@ -9,6 +9,12 @@ const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transform: translateY(${props => (props.isVisible ? '0' : '-100%')});
+  transition: transform 0.3s ease;
+  z-index: 1000;
 `;
 
 const Logo = styled.img`
@@ -40,10 +46,33 @@ const Nav = styled.div`
 `;
 
 const Header = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(window.scrollY);
+
+  const handleScroll = () => {
+    if (window.scrollY < lastScrollY) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <HeaderContainer>
+    <HeaderContainer
+      isVisible={isVisible}
+      onMouseEnter={() => setIsVisible(true)}
+      onMouseLeave={() => setIsVisible(window.scrollY < lastScrollY)}
+    >
       <NavContainer>
-      <Logo src={logo} alt="Logo" />
+        <Logo src={logo} alt="Logo" />
         <Nav>
           <a href="#inicio">Início</a>
           <a href="#entidade">Entidade</a>
