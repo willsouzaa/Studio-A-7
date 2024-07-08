@@ -31,7 +31,7 @@ const PacoteCard = styled.div`
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 500px;
+  width: 40%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 `;

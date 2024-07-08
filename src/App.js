@@ -8,7 +8,7 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0px 10px 0px 10px; /* Remove margem */
+  margin: 0px;
 
   
 
