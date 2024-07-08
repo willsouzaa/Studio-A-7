@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import SmallSlideshow from './SmallSlideshow';
 import apresentacao from '../Imagens/Apresentacao.png';
 import segundaImagem from '../Imagens/Somos.png';
-import PacotesContainer from './PacotesContainer'; // Verifique se o caminho está correto
+import PacotesContainer from './PacotesContainer';
+import TermsAndConditions from './TermsAndConditions'; // Importe o novo componente
 
 const MainContainer = styled.main`
   background-color: #000;
@@ -12,7 +13,7 @@ const MainContainer = styled.main`
   align-items: center;
   padding: -1rem;
   margin-top: 1rem;
-  width: 100%; /* Define a largura como 100% */
+  width: 100%;
   flex: 1;
   margin: 0px;
 
@@ -39,6 +40,7 @@ const Main = () => {
       <SegundaImagem src={segundaImagem} alt="Segunda Imagem" />
       <SmallSlideshow />
       <PacotesContainer />
+      <TermsAndConditions /> {/* Adicione o componente aqui */}
     </MainContainer>
   );
 };

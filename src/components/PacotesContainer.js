@@ -5,7 +5,7 @@ import Pacote1Image from '../Imagens/Pacote1.jpg'; // Importando a imagem do pac
 import Pacote2Image from '../Imagens/Pacote1.jpg'; // Importando a imagem do pacote 2
 
 const PacotesWrapper = styled.div`
-  border: 10px solid #363636	;
+  border: 10px solid #000	;
   display: flex;
   flex-direction: column;
   align-items: center;
