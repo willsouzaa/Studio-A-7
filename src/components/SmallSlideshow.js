@@ -6,15 +6,15 @@ import Slide2 from '../Imagens/Slide2.png';
 import Slide3 from '../Imagens/Slide3.png';
 
 const SmallSlideshowContainer = styled.div`
-  max-width: 60%;
-  max-height: 100%; /* Altura do slideshow pequeno */
+  min-width: 100%;
+  max-height: 50%; /* Altura do slideshow pequeno */
   overflow: hidden;
   position: relative;
 `;
 
 const Slide = styled.div`
   display: flex;
-  width: 200%; /* Ajusta para caber os slides duplicados */
+  width: 300%; /* Ajusta para caber os slides duplicados */
   animation: slideAnimation 30s linear infinite; /* Animação contínua */
 
   @keyframes slideAnimation {
