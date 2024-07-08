@@ -5,12 +5,13 @@ import Pacote1Image from '../Imagens/Pacote1.jpg'; // Importando a imagem do pac
 import Pacote2Image from '../Imagens/Pacote1.jpg'; // Importando a imagem do pacote 2
 
 const PacotesWrapper = styled.div`
+  border: 10px solid #363636	;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   background-color: #000;
-  width: 100%;
+  width: 99%;
 `;
 
 const BannerImage = styled.img`
@@ -29,8 +30,9 @@ const PacotesGrid = styled.div`
 
 const PacoteCard = styled.div`
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 20px solid #ddd;
   border-radius: 8px;
+  border-color: #2c2c2c;
   width: 40%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -38,7 +40,7 @@ const PacoteCard = styled.div`
 
 const PacoteImage = styled.img`
   width: 100%;
-  height: 200px;
+  height: 70%;
   object-fit: cover;
 `;
 
@@ -64,6 +66,30 @@ const PacotePrice = styled.div`
 
 const PacotesContainer = () => {
   const pacotes = [
+    {
+      title: 'Pacote 1',
+      description: 'Descrição do Pacote 1',
+      price: 'R$ 100,00',
+      imageUrl: Pacote1Image
+    },
+    {
+      title: 'Pacote 2',
+      description: 'Descrição do Pacote 2',
+      price: 'R$ 200,00',
+      imageUrl: Pacote2Image
+    },
+    {
+      title: 'Pacote 1',
+      description: 'Descrição do Pacote 1',
+      price: 'R$ 100,00',
+      imageUrl: Pacote1Image
+    },
+    {
+      title: 'Pacote 2',
+      description: 'Descrição do Pacote 2',
+      price: 'R$ 200,00',
+      imageUrl: Pacote2Image
+    },
     {
       title: 'Pacote 1',
       description: 'Descrição do Pacote 1',
