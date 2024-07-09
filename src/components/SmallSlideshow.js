@@ -16,7 +16,7 @@ const SmallSlideshowContainer = styled.div`
 const Slide = styled.div`
   display: flex;
   width: 100%; /* Ajusta para caber os slides duplicados */
-  animation: slideAnimation 90s linear infinite; /* Animação contínua */
+  animation: slideAnimation 20s linear infinite; /* Animação contínua */
   
   @keyframes slideAnimation {
     0% { transform: translateX(0); }

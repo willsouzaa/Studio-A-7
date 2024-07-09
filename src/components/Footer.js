@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const FooterContainer = styled.footer`
   background-color: #333;
   color: white;
-  padding: 2rem 1rem;
   text-align: left;
   width: 100%;
   display: flex;
