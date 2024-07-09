@@ -13,7 +13,7 @@ const MainContainer = styled.main`
   align-items: center;
   padding: -1rem;
   margin-top: 1rem;
-  width: 100%;
+  max-width: 100%;
   flex: 1;
   margin: 0px;
 

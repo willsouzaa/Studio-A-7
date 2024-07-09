@@ -11,7 +11,7 @@ const PacotesWrapper = styled.div`
   align-items: center;
   padding: 0px;
   background-color: #000;
-  width: 99%;
+  width: 96%;
 `;
 
 const BannerImage = styled.img`

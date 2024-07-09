@@ -6,7 +6,7 @@ const TermsContainer = styled.div`
   color: #333;
   padding: 2rem;
   border-radius: 8px;
-  width: 95%;
+  max-width: 95%;
   margin: 2rem auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
